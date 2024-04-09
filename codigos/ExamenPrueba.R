@@ -5,6 +5,9 @@ head(df,10)
 library(ggplot2)
 library(forcats)
 library(dplyr)
+library(igraph)
+library(ggraph)
+library(tidyverse)
 
 
 #Pregunta 3
@@ -43,4 +46,23 @@ df2 <- df %>% group_by(Operador) %>%
   arrange(porcentaje) %>%
   mutate(labels=scales::percent(porcentaje))
 
+#Pregunta 5
+#1) sí, son los nodos mas grandes de la red
+#2) Los que tienen el grado más alto son 8,10,2
+#3) No beben alcohol en exceso ni comenten delitos. Su tamaño es de los más pequeños y sus rangos de alcohol son dentre 1 y 2
 
+
+#Ultima pregunta
+#Los que le reportan mas a un superior son las hojas
+grafo <- read.csv("datosJerarquia.csv")
+g <- graph_from_data_frame(grafo, directed = T)
+ggraph(g, layout= "dendrogram")+ geom_edge_diagonal() +     geom_node_text(aes(label = name, filter = !leaf),
+                                                                           nudge_x = 0.3, angle = 30
+)
+
+#Volviendolo aahora circular
+ggraph(g, layout= "dendrogram", circular = T)+ geom_edge_diagonal() +     geom_node_text(aes(label = name, filter = !leaf),
+                                                                           nudge_x = 0.3, angle = 30
+)
+
+#No es apropiado para representar jerarquias 
