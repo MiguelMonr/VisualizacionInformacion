@@ -1,8 +1,8 @@
-#Codigos para shinny 
+# Codigos para shinny
 library(shiny)
 # Interfaz de usuario
 ui <- fluidPage(
-  '¡Hola Mundo!'
+  "¡Hola Mundo!"
 )
 # Servidor
 server <- function(input, output, session) {
