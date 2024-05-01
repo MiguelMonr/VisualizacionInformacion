@@ -1,8 +1,8 @@
-
 library(shiny)
 library(HistData)
 library(maps)
 library(mapproj)
+#install.packages('mapproj')
 
 data(Galton)
 
@@ -11,11 +11,12 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       sliderInput('mu', 'Adivina la media de la altura de los adultos',
-                  value = 70, min = 62, max = 74, step = 0.05,)
+                  value = 70, min = 62, max = 74, step = 0.05,),
+      img(src = "logo_ITAM.png", height = 23, width = 12)
     ),
     mainPanel(
       plotOutput('nvoHistog')
-    )
+      )
   )
 )
 
@@ -33,5 +34,7 @@ server <-function(input, output) {
 }
 
 shinyApp(ui, server)
+
+
 
 

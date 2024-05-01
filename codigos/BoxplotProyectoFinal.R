@@ -1,10 +1,10 @@
 directorio_actual <- getwd()
-setwd("/Users/miguela.monreal/CodigosVisInfo") #Esto sirve para establecer la carpeta en la que quieres trabajar 
+setwd("/Users/miguela.monreal/CodigosVisInfo/codigos") #Esto sirve para establecer la carpeta en la que quieres trabajar 
 
 
 datos <- read.csv("FoodTaxes.csv")
 str(datos)
-head(datos)
+head(datos,6)
 
 library(ggplot2)
 datos$Year <- as.factor(datos$Year)
