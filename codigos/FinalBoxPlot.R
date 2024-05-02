@@ -2,7 +2,7 @@ library(ggplot2)
 library(dplyr)
 
 
-data <- read.csv("FinalFood.csv")
+data <- read.csv("v2Abril.csv")
 head(data,6)
 
 summary(data)
