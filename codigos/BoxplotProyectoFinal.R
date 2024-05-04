@@ -2,7 +2,7 @@ directorio_actual <- getwd()
 setwd("/Users/miguela.monreal/CodigosVisInfo/codigos") #Esto sirve para establecer la carpeta en la que quieres trabajar 
 
 
-datos <- read.csv("FoodTaxes.csv")
+datos <- read.csv("v2Abril.cs")
 str(datos)
 head(datos,6)
 
