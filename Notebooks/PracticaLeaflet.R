@@ -52,14 +52,6 @@ mp3 <- leaflet(mxpolig) %>%
     clusterOptions = markerClusterOptions()) #Esta opcion es por indicar los clusters
 mp3
 
- 
-mp3 <- leaflet(mxpolig) %>%
-  addTiles() %>%
-  addMarkers(data=df1,popup = paste0(
-    "<strong>Nombre: </strong>", df1$NOM_ENT, "<br>",
-    "<strong>Poblaci?n: </strong>", df1$POB, "<br>"),
-    clusterOptions = markerClusterOptions()) #Esta opcion es por indicar los clusters
-mp3
 
 #Mapa con botones
 
@@ -71,7 +63,7 @@ mp4 <- leaflet(mxpolig) %>%
     "<strong>Nombre: </strong>", df1$NOM_ENT, "<br>",
     "<strong>Población: </strong>", df1$POB, "<br>"),
     clusterOptions = markerClusterOptions()) %>%
-  addProviderTiles(providers$CartoDB.Positron,group="Mapa base 2")%>%
+  addProviderTiles(providers$CartoDB.Positron,group="Mapa base 2")%>% #CartoDB es para los mapas
   addProviderTiles(providers$Esri.NatGeoWorldMap,group="Mapa base 3")%>%
   addLayersControl(
     baseGroups = c("Mapa base 1", "Mapa base 2", "Mapa base 3"),
@@ -80,11 +72,6 @@ mp4 <- leaflet(mxpolig) %>%
 
 
 mp4
-
-
-
-
-
 
 #Añadiendo mapas de coropletas
 palPob <- colorNumeric("Blues",domain=df1$POB) #Elegimos el tipo de paleta que utilizaremos y de donde sacara los datos
@@ -175,6 +162,43 @@ mp7 <- leaflet(mxpolig) %>%
 options=layersControlOptions(collapsed = T)
 
 mp7
+
+#Mapa en su totalidad
+
+mp10 <- leaflet(mxpolig) %>%
+  addTiles() %>%
+  addPolygons(stroke = F, smoothFactor = 0.2, opacity=1.0, 
+              fillOpacity = 0.5, fillColor = ~palPob(df1$POB), 
+              highlightOptions = highlightOptions(color="white",
+                                                  weight=2,
+                                                  bringToFront = T),
+              label=df1$NOM_ENT, labelOptions = labelOptions(direction = "auto"),
+              group="Por Población")%>%
+  addLegend(position="bottomleft", pal=palPob, values = ~df1$POB,
+            title="Población", group="Por Población") %>%
+  addPolygons(stroke = F, smoothFactor = 0.2, opacity=1.0,
+              fillOpacity = 0.5, fillColor = ~palDens(df1$DENS),
+              highlightOptions = highlightOptions(color="white",
+                                                  weight=2,
+                                                  bringToFront = T),
+              label=df1$NOM_ENT, labelOptions = labelOptions(direction = "auto"),
+              group = "Por Densidad")%>%
+  addLegend(position="bottomleft", pal=palDens, values = ~df1$DENS,
+            labFormat=labelFormat(digits=0), group = "Por Densidad",
+            title="Densidad")%>%
+  addMarkers(data=df1,popup = paste0(
+    "<strong>Nombre: </strong>", df1$NOM_ENT, "<br>",
+    "<strong>Población: </strong>", df1$POB, "<br>",
+    "<strong>Densidad Poblacional: </strong>", df1$DENS, "<br>"),
+    clusterOptions = markerClusterOptions())%>%
+  addProviderTiles(providers$CartoDB.Positron,group="Mapa base 2")%>%
+  addProviderTiles(providers$Esri.NatGeoWorldMap,group="Mapa base 3")%>%
+  addLayersControl(
+    baseGroups = c("Mapa base 1", "Mapa base 2", "Mapa base 3"),
+    overlayGroups = c("Por Población", "Por Densidad"), 
+    options=layersControlOptions(collapsed=F))
+
+mp10
 
 
 
