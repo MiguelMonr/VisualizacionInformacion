@@ -2,73 +2,134 @@ directorio_actual <- getwd()
 setwd("/Users/miguela.monreal/CodigosVisInfo/codigos") #Esto sirve para establecer la carpeta en la que quieres trabajar 
 
 
-datos <- read.csv("v2Abril.cs")
+datos <- read.csv("v2Abril.csv")
 str(datos)
-head(datos,6)
+head(datos)
+show(datos)
 
 library(ggplot2)
+library(dplyr)
+library(gridExtra)
+
 datos$Year <- as.factor(datos$Year)
 miGraf <- ggplot(datos, aes(Year, Disfavored.tax..Soda..Y.N.,))
 
+#Forma de ggplot
 miGraf +  geom_boxplot(varwidth = TRUE, fill = "pink") +
   labs(title = "Box plot", subtitle = "Taxes por año", 
        x = "Año ", y = "Consumo")
 
 #taxes de Soda
 
-miGraf <- ggplot(datos, aes(Year, Sales.Tax..regular.soda..VM.))
+miGraf1 <- ggplot(datos, aes(Year,Soda))
 
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de soda", 
-       x = "Año ", y = "Consumo")
-
-#Taxes de agua
-miGraf <- ggplot(datos, aes(Year, Sales.Tax.rate.Bottled.Water ))
-
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de agua", 
-       x = "Año ", y = "Consumo")
-
-#taxes de candy
-miGraf <- ggplot(datos, aes(Year, Sales.tax..Candy))
-
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de Candy", 
-       x = "Año ", y = "Consumo")
-
-#taxes de chicle
-miGraf <- ggplot(datos, aes(Year, Sales.Tax..Gum))
-
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de chicle", 
-       x = "Año ", y = "Consumo")
+miGraf11 <- miGraf1+  geom_boxplot(varwidth = TRUE, fill = "blue") +
+  labs(title = "Distribucion de los precios a lo largo de los años " , subtitle = "Taxes de soda", 
+       x = "Año ", y = "Precio impuesto")
+miGraf11
 
 #Taxes papitas
-miGraf <- ggplot(datos, aes(Year, Sales.Tax..Chips..Pretzels..VM.))
+miGraf2 <- ggplot(datos, aes(Year, Chips..Pretzels))
 
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de frituras", 
-       x = "Año ", y = "Consumo")
+miGraf22 <- miGraf2 +  geom_boxplot(varwidth = TRUE,fill = "red") +
+  labs(title = "Distribucion de los precios a lo largo de los años " subtitle = "Taxes de frituras", 
+       x = "Año ", y = "Precio impuesto")
+miGraf22
 
 #Taxes de helado
-miGraf <- ggplot(datos, aes(Year, Sales.Tax..Ice.Cream))
+miGraf3 <- ggplot(datos, aes(Year, Ice.Cream))
 
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de helado", 
-       x = "Año ", y = "Consumo")
+miGraf33<- miGraf3 +  geom_boxplot(varwidth = TRUE, fill = "green") +
+  labs(title = "Distribucion de los precios a lo largo de los años ", subtitle = "Taxes de helado", 
+       x = "Año ", y = "Precio impuesto")
+miGraf33
 
-#Taxes de popsicles
-miGraf <- ggplot(datos, aes(Year, Sales.Tax..Popsicle ))
+grid.arrange(miGraf11,miGraf33)
 
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de popsicles", 
-       x = "Año ", y = "Consumo")
-#Taxes malteadas
-miGraf <- ggplot(datos, aes(Year, Sales.Tax..Milkshakes..Baked.Goods ))
 
-miGraf +  geom_boxplot(varwidth = TRUE, fill = "blue") +
-  labs(title = "Box plot", subtitle = "Taxes de malteadas", 
-       x = "Año ", y = "Consumo")
+promedios_por_anioS <- datos %>%
+  group_by(Year) %>%
+  summarise(promedio_soda = mean(Soda))
+
+promedios_por_anioI <- datos %>%
+  group_by(Year) %>%
+  summarise(promedio_I = mean(Ice.Cream ))
+
+promedios_por_anioP <- datos %>%
+  group_by(Year) %>%
+  summarise(promedio_P = mean(Chips..Pretzels ))
+
+print(promedios_por_anioS)
+
+
+
+
+
+#Grafica de puntos
+miGrafS <- ggplot(promedios_por_anioS, aes(x=factor(Year), y=promedio_soda)) +
+  geom_point(size=2, color= "blue") +
+  geom_smooth(method="lm", se=FALSE) +
+  ggtitle("Evolucion de costos promedios en Estados Unidos: Soda") +
+  xlab("Año") +
+  ylab("Promedio de Soda")
+
+miGrafS
+
+miGrafI <- ggplot(promedios_por_anioI, aes(x=factor(Year), y=promedio_I)) +
+  geom_point(size=2, color= "red") +
+  geom_smooth(method="lm", se=FALSE) +
+  ggtitle("Evolucion de costos promedios en Estados Unidos: Helado") +
+  xlab("Año") +
+  ylab("Promedio de Helado")
+
+miGrafI
+
+miGrafP <- ggplot(promedios_por_anioP, aes(x=factor(Year), y=promedio_P)) +
+  geom_point(size=2, color= "orange") +
+  geom_smooth(method="lm", se=FALSE) +
+  ggtitle("Evolucion de costos promedios en Estados Unidos: Frituras y Soda") +
+  xlab("Año") +
+  ylab("Promedio de Frituras")
+miGrafP
+
+miGrafS + miGrafP
+grid.arrange(miGrafS, miGrafP,miGrafI)
+
+
+#Uniendo 
+merged_df <- promedios_por_anioI %>%
+  left_join(promedios_por_anioS, by = "Year") %>%
+  left_join(promedios_por_anioP, by = "Year")
+
+# Mostrar el dataframe resultante
+head(merged_df) #DataFrames con promedios
+
+
+#Grafica de histogramas
+ggplot(merged_df, aes(x = as.factor(Year), y = promedio_I)) +
+  geom_bar(stat = "identity", fill = "skyblue", color = "black") +
+  labs(title = "Promedio_I por año",
+       x = "Año",
+       y = "Promedio_I") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+
+#Grafica de barras apiladas
+
+plot1 <- ggplot(mtcars, aes(x = mpg, y = disp)) +
+  geom_point()
+plot1
+
+# Gráfico 2
+plot2 <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point()
+plot2
+
+
+grid.arrange(plot1, plot2, ncol = 2)
+
+
+
 
 
 

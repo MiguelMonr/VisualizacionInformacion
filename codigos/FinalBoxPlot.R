@@ -1,9 +1,10 @@
 library(ggplot2)
 library(dplyr)
 
-
+setwd("/Users/miguela.monreal/CodigosVisInfo/codigos/")
 data <- read.csv("v2Abril.csv")
 head(data,6)
+
 
 summary(data)
 
@@ -13,12 +14,12 @@ data$Year <- as.factor(datos$Year)
 
 
 #Grafica de soda
-ggplot(data, aes(x=Region, y= Soda)) +
+ggplot(data, aes(x=Region, y= Soda,)) +
   geom_bar(stat= "identity",position= "dodge", fill = "red") +  
   labs(title = "Ventas de Soda por Región",
        x = "Región",
        y = "Precio de tax") +
-  theme_bw()
+  
 
 
 #Grafica de helado
