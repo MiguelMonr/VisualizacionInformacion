@@ -23,7 +23,7 @@ miGraf +  geom_boxplot(varwidth = TRUE, fill = "pink") +
 
 miGraf1 <- ggplot(datos, aes(Year,Soda))
 
-miGraf11 <- miGraf1+  geom_boxplot(varwidth = TRUE, fill = "blue") +
+miGraf11 <- miGraf1+  geom_boxplot(varwidth = TRUE, fill = "#ffab00") +
   labs(title = "Distribucion de los precios a lo largo de los años " , subtitle = "Taxes de soda", 
        x = "Año ", y = "Precio impuesto")
 miGraf11
@@ -31,15 +31,15 @@ miGraf11
 #Taxes papitas
 miGraf2 <- ggplot(datos, aes(Year, Chips..Pretzels))
 
-miGraf22 <- miGraf2 +  geom_boxplot(varwidth = TRUE,fill = "red") +
-  labs(title = "Distribucion de los precios a lo largo de los años " subtitle = "Taxes de frituras", 
+miGraf22 <- miGraf2 +  geom_boxplot(varwidth = TRUE,fill = "#008f21") +
+  labs(title = "Distribucion de los precios a lo largo de los años ", subtitle = "Taxes de frituras", 
        x = "Año ", y = "Precio impuesto")
 miGraf22
 
 #Taxes de helado
 miGraf3 <- ggplot(datos, aes(Year, Ice.Cream))
 
-miGraf33<- miGraf3 +  geom_boxplot(varwidth = TRUE, fill = "green") +
+miGraf33<- miGraf3 +  geom_boxplot(varwidth = TRUE, fill = "#d500f9") +
   labs(title = "Distribucion de los precios a lo largo de los años ", subtitle = "Taxes de helado", 
        x = "Año ", y = "Precio impuesto")
 miGraf33
@@ -67,7 +67,7 @@ print(promedios_por_anioS)
 
 #Grafica de puntos
 miGrafS <- ggplot(promedios_por_anioS, aes(x=factor(Year), y=promedio_soda)) +
-  geom_point(size=2, color= "blue") +
+  geom_point(size=2, color= "#ffab00") +
   geom_smooth(method="lm", se=FALSE) +
   ggtitle("Evolucion de costos promedios en Estados Unidos: Soda") +
   xlab("Año") +
@@ -76,7 +76,7 @@ miGrafS <- ggplot(promedios_por_anioS, aes(x=factor(Year), y=promedio_soda)) +
 miGrafS
 
 miGrafI <- ggplot(promedios_por_anioI, aes(x=factor(Year), y=promedio_I)) +
-  geom_point(size=2, color= "red") +
+  geom_point(size=2, color= "#d500f9") +
   geom_smooth(method="lm", se=FALSE) +
   ggtitle("Evolucion de costos promedios en Estados Unidos: Helado") +
   xlab("Año") +
@@ -85,7 +85,7 @@ miGrafI <- ggplot(promedios_por_anioI, aes(x=factor(Year), y=promedio_I)) +
 miGrafI
 
 miGrafP <- ggplot(promedios_por_anioP, aes(x=factor(Year), y=promedio_P)) +
-  geom_point(size=2, color= "orange") +
+  geom_point(size=2, color= "#008f21") +
   geom_smooth(method="lm", se=FALSE) +
   ggtitle("Evolucion de costos promedios en Estados Unidos: Frituras y Soda") +
   xlab("Año") +
