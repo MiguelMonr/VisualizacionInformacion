@@ -32,5 +32,8 @@ Los temas de cada parcial puede depender del semestre, en este caso el orden fue
 
 ## Notas 
 Se utilizo la extension de vscode better comments para más detalles en los comentarios; es recomendable descargarla más no es critico si no se logra. 
-**Personalmente** fue más comodo trabajar en ciertas ocaciones desde vscode que de Rstudio. Para poder utilizar los notebooks fue necesario descargar e instalar el kernel de R. Aquí dejo el tutorial. 
+**PERSONALMENTE** fue más comodo trabajar en ciertas ocaciones desde vscode que de Rstudio. Para poder utilizar los notebooks fue necesario descargar e instalar el kernel de R. Aquí dejo el tutorial. 
 https://www.youtube.com/watch?v=3_DZLHKlmGE&list=LL&index=16 
+
+Cualquier duda o comentario, si es que se llega a presentar, levanta un issue para que pueda ponerme en contacto contigo. 
+
