@@ -1,15 +1,13 @@
 # Visualizacion de la Informacion
 
 Este repositorio tiene los distintos codigos de la materia de visualizacion de la informaión del semestre primavera 2024. La estructura es la siguiente
-|
-|
-|-cheatSheetsExamen/
-|        |-----PrimerParcial/ 
-|        |-----SegundoParcial/
-|        |-----TercerParcial/
-|        |--ManipulacionDataFrames  
-|
-|--Practicas/
+cheatSheetsExamen/
+├── PrimerParcial/
+├── SegundoParcial/
+├── TercerParcial/
+├── ManipulacionDataFrames/
+└── Practicas/
+
 
 En cheatSheetsExamen se agrupan los codigos de los temas que se ven en cada parcial. Buscan ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica. 
 - Primer parcial
