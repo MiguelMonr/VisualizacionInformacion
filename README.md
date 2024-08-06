@@ -10,12 +10,10 @@ Este repositorio tiene los distintos codigos de la materia de visualizacion de l
 |       |-----TercerParcial/
 |       |-----ManipulacionDataFrames
 |
-|-----Practicas/
 |
 |-----Flashcards/  
 ```
-En cheatSheetsExamen se agrupan los codigos de los temas que se ven en cada parcial. Buscan ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica. 
-En practicas se encuentran ejercicios que pueden ayudar a reofrzar el conocimiento de cada tema; finalmente en flashcards se encuentra material teorico. 
+En cheatSheetsExamen se agrupan los codigos de los temas que se ven en cada parcial. Buscan ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica; finalmente en flashcards se encuentra material teorico. 
  >Aclaracion
 Los temas de cada parcial puede depender del semestre, en este caso el orden fue el que tuve cuando lleve la materia. 
 # Primer parcial:
