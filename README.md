@@ -1,6 +1,6 @@
 # Visualizacion de la Informacion
 
-Este repositorio tiene los distintos codigos de la materia de visualizacion de la informaión del semestre primavera 2024. El objetivo de ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica, **en ningun momento el objetivo de este repositorio es el fraude academico** este repositorio **no es un substituo** de las clases. Busca ser una herramienta de estudio para reforzar el aprendizaje. 
+Este repositorio tiene los distintos codigos de la materia de visualizacion de la informaión del semestre primavera 2024. El objetivo de ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica, **en ningun momento el objetivo de este repositorio es el fraude academico** este repositorio **no es un substituo de las clases**. Busca ser una herramienta de estudio para reforzar el aprendizaje. 
 
 La estructura es la siguiente
 ```
