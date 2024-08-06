@@ -4,7 +4,7 @@ df1 <- read.csv("estadosMx.csv")
 mxpolig <- st_read("MapaMexico.geojson")
 head(mxpolig) #Este tiene la forma de los estados
 head(df1) #Este tiene la ubicacion de donde se encuentran las capitale
-
+#here
 #Desplegando el mapa
 mp1 <- leaflet(mxpolig) %>%
   addTiles()%>%
