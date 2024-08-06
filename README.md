@@ -1,9 +1,9 @@
 # Visualizacion de la Informacion
 
-Este repositorio tiene los distintos codigos de la materia de visualizacion de la informaión del semestre primavera 2024. La estructura es la siguiente
+Este repositorio tiene los distintos codigos de la materia de visualizacion de la informaión del semestre primavera 2024. El objetivo de ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica, **en ningun momento el objetivo de este repositorio es el fraude academico** este repositorio **no es un substituo** de las clases. Busca ser una herramienta de estudio para reforzar el aprendizaje. 
+
+La estructura es la siguiente
 ```
-|
-|
 |-cheatSheetsExamen/
 |       |-----PrimerParcial/
 |       |-----SegundoParcial/
@@ -13,9 +13,12 @@ Este repositorio tiene los distintos codigos de la materia de visualizacion de l
 |
 |-----Flashcards/  
 ```
-En cheatSheetsExamen se agrupan los codigos de los temas que se ven en cada parcial. Buscan ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica; finalmente en flashcards se encuentra material teorico. 
+En cheatSheetsExamen se agrupan los codigos de los temas que se ven en cada parcial. Buscan ofrecer una manera organizada y detallada para acceder a los codigos de cada grafica. 
  >Aclaracion
-Los temas de cada parcial puede depender del semestre, en este caso el orden fue el que tuve cuando lleve la materia. 
+Los temas de cada parcial puede depender del semestre, en este caso el orden fue el que tuve cuando lleve la materia.
+>
+En flashcards se encuentra material teorico. 
+
 # Primer parcial:
 - Graficas basicas pt1: scatter plot, bubble plot,columnas, barras apiladas, heatmaps
 - Manipulacion de dataframes
