@@ -1,0 +1,129 @@
+Entidad federativa,Total,Hombres,Mujeres,Grupo quinquenal de edad descriptivo,Clave
+Aguascalientes,255478,129337,126141,Infancia,AGS
+Aguascalientes,129717,66080,63637,Preadolescencia,AGS
+Aguascalientes,628575,304722,323853,Adultos,AGS
+Aguascalientes,145376,66673,78703,Adultos mayores,AGS
+Baja California,312348,159306,153042,Preadolescencia,BC
+Baja California,565955,287019,278936,Infancia,BC
+Baja California,1797516,912552,884964,Adultos,BC
+Baja California,379302,178751,200551,Adultos mayores,BC
+Baja California Sur,129388,65441,63947,Infancia,BCS
+Baja California Sur,67665,34455,33210,Preadolescencia,BCS
+Baja California Sur,379407,194514,184893,Adultos,BCS
+Baja California Sur,75608,36953,38655,Adultos mayores,BCS
+Campeche,80168,41047,39121,Preadolescencia,CAM
+Campeche,413136,199288,213848,Adultos,CAM
+Campeche,160950,81441,79509,Infancia,CAM
+Campeche,102616,50296,52320,Adultos mayores,CAM
+Chiapas,583132,295114,288018,Preadolescencia,CHP
+Chiapas,2271371,1073499,1197872,Adultos,CHP
+Chiapas,1186944,597669,589275,Infancia,CHP
+Chiapas,507757,251181,256576,Adultos mayores,CHP
+Chihuahua,419821,195050,224771,Adultos mayores,CHH
+Chihuahua,333715,169615,164100,Preadolescencia,CHH
+Chihuahua,608608,308792,299816,Infancia,CHH
+Chihuahua,1652184,818978,833206,Adultos,CHH
+Ciudad de México,608962,309140,299822,Preadolescencia,CDMX
+Ciudad de México,1491619,638412,853207,Adultos mayores,CDMX
+Ciudad de México,4255607,2066281,2189326,Adultos,CDMX
+Ciudad de México,1043811,529157,514654,Infancia,CDMX
+Coahuila de Zaragoza,268144,136301,131843,Preadolescencia,COAH
+Coahuila de Zaragoza,1378082,684319,693763,Adultos,COAH
+Coahuila de Zaragoza,348537,165358,183179,Adultos mayores,COAH
+Coahuila de Zaragoza,556136,282229,273907,Infancia,COAH
+Colima,112362,57178,55184,Infancia,COL
+Colima,91557,43494,48063,Adultos mayores,COL
+Colima,327692,160476,167216,Adultos,COL
+Colima,60801,30952,29849,Preadolescencia,COL
+Durango,209478,99912,109566,Adultos mayores,DUR
+Durango,766097,374927,391170,Adultos,DUR
+Durango,170271,86764,83507,Preadolescencia,DUR
+Durango,343633,174897,168736,Infancia,DUR
+Guanajuato,549301,278676,270625,Preadolescencia,GTO
+Guanajuato,2716722,1302783,1413939,Adultos,GTO
+Guanajuato,1086391,550174,536217,Infancia,GTO
+Guanajuato,681374,315594,365780,Adultos mayores,GTO
+Guerrero,1398189,651888,746301,Adultos,GRO
+Guerrero,443534,206523,237011,Adultos mayores,GRO
+Guerrero,686468,346495,339973,Infancia,GRO
+Guerrero,348493,176233,172260,Preadolescencia,GRO
+Hidalgo,1320562,618038,702524,Adultos,HGO
+Hidalgo,507742,256341,251401,Infancia,HGO
+Hidalgo,383675,179315,204360,Adultos mayores,HGO
+Hidalgo,283676,143492,140184,Preadolescencia,HGO
+Jalisco,1389083,703033,686050,Infancia,JAL
+Jalisco,999085,459620,539465,Adultos mayores,JAL
+Jalisco,3675998,1805881,1870117,Adultos,JAL
+Jalisco,714906,364020,350886,Preadolescencia,JAL
+Michoacán de Ocampo,871455,440207,431248,Infancia,MICH
+Michoacán de Ocampo,601699,281842,319857,Adultos mayores,MICH
+Michoacán de Ocampo,1991552,954366,1037186,Adultos,MICH
+Michoacán de Ocampo,426869,215932,210937,Preadolescencia,MICH
+Morelos,851056,404643,446413,Adultos,MOR
+Morelos,164177,83391,80786,Preadolescencia,MOR
+Morelos,273903,126464,147439,Adultos mayores,MOR
+Morelos,304374,154317,150057,Infancia,MOR
+México,1919454,876305,1043149,Adultos mayores,MEX
+México,1464549,740376,724173,Preadolescencia,MEX
+México,7663217,3691367,3971850,Adultos,MEX
+México,2657518,1344350,1313168,Infancia,MEX
+Nayarit,522294,256592,265702,Adultos,NAY
+Nayarit,217543,110602,106941,Infancia,NAY
+Nayarit,113335,57726,55609,Preadolescencia,NAY
+Nayarit,157395,76041,81354,Adultos mayores,NAY
+Nuevo León,918728,465486,453242,Infancia,NL
+Nuevo León,2664432,1346160,1318272,Adultos,NL
+Nuevo León,654050,303147,350903,Adultos mayores,NL
+Nuevo León,462720,235404,227316,Preadolescencia,NL
+Oaxaca,748612,376804,371808,Infancia,OAX
+Oaxaca,398362,201586,196776,Preadolescencia,OAX
+Oaxaca,550577,254482,296095,Adultos mayores,OAX
+Oaxaca,1676655,778461,898194,Adultos,OAX
+Puebla,745419,334821,410598,Adultos mayores,PUE
+Puebla,2840607,1339694,1500913,Adultos,PUE
+Puebla,1177329,594454,582875,Infancia,PUE
+Puebla,603375,305853,297522,Preadolescencia,PUE
+Querétaro,198601,100847,97754,Preadolescencia,QRO
+Querétaro,240222,109801,130421,Adultos mayores,QRO
+Querétaro,384862,194481,190381,Infancia,QRO
+Querétaro,1116057,543309,572748,Adultos,QRO
+Quintana Roo,131052,64067,66985,Adultos mayores,QR
+Quintana Roo,303119,153779,149340,Infancia,QR
+Quintana Roo,154281,78464,75817,Preadolescencia,QR
+Quintana Roo,939817,474322,465495,Adultos,QR
+San Luis Potosí,473658,239303,234355,Infancia,SLP
+San Luis Potosí,252780,128254,124526,Preadolescencia,SLP
+San Luis Potosí,1198977,573006,625971,Adultos,SLP
+San Luis Potosí,361599,171201,190398,Adultos mayores,SLP
+Sinaloa,260172,132511,127661,Preadolescencia,SIN
+Sinaloa,1307235,641850,665385,Adultos,SIN
+Sinaloa,486732,247856,238876,Infancia,SIN
+Sinaloa,393519,187026,206493,Adultos mayores,SIN
+Sonora,258791,132191,126600,Preadolescencia,SON
+Sonora,1292979,648883,644096,Adultos,SON
+Sonora,465056,235806,229250,Infancia,SON
+Sonora,358404,170269,188135,Adultos mayores,SON
+Tabasco,430935,218375,212560,Infancia,TAB
+Tabasco,222698,113492,109206,Preadolescencia,TAB
+Tabasco,257525,124740,132785,Adultos mayores,TAB
+Tabasco,1044682,496595,548087,Adultos,TAB
+Tamaulipas,426227,198115,228112,Adultos mayores,TAMPS
+Tamaulipas,1550229,759896,790333,Adultos,TAMPS
+Tamaulipas,305853,155866,149987,Preadolescencia,TAMPS
+Tamaulipas,565684,286491,279193,Infancia,TAMPS
+Tlaxcala,579946,275430,304516,Adultos,TLAX
+Tlaxcala,119718,60747,58971,Preadolescencia,TLAX
+Tlaxcala,228198,115370,112828,Infancia,TLAX
+Tlaxcala,145886,67670,78216,Adultos mayores,TLAX
+Veracruz de Ignacio de la Llave,3361546,1574504,1787042,Adultos,VER
+Veracruz de Ignacio de la Llave,1157892,538088,619804,Adultos mayores,VER
+Veracruz de Ignacio de la Llave,1275435,645448,629987,Infancia,VER
+Veracruz de Ignacio de la Llave,685468,347680,337788,Preadolescencia,VER
+Yucatán,1054898,516697,538201,Adultos,YUC
+Yucatán,289035,136487,152548,Adultos mayores,YUC
+Yucatán,189137,95833,93304,Preadolescencia,YUC
+Yucatán,362108,183237,178871,Infancia,YUC
+Zacatecas,151355,76912,74443,Preadolescencia,ZAC
+Zacatecas,307449,155004,152445,Infancia,ZAC
+Zacatecas,664881,317271,347610,Adultos,ZAC
+Zacatecas,199779,96184,103595,Adultos mayores,ZAC
